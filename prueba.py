@@ -143,4 +143,15 @@ boton.pack(pady=10)
 boton_salir = tk.Button(ventana, text="Salir", command=ventana.destroy, bg="red", fg="white", cursor="hand2")
 boton_salir.pack(pady=5)
 
+# Texto de crédito en la esquina inferior derecha
+creditos = tk.Label(
+    ventana,
+    text="© 2025 - El Mundo De La Tecnología",
+    bg="#7692ff",
+    fg="white",
+    font=("Arial", 9, "italic")
+)
+creditos.place(relx=1.0, rely=1.0, anchor="se", x=-10, y=-10)
+
+
 ventana.mainloop()
